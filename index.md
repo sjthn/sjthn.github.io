@@ -1,6 +1,6 @@
 ---
-layout: page
+layout: default
 title: "Srijith"
 ---
 
-Hello World!
+{% include_relative about.md %}

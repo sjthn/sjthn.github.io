@@ -1,0 +1,23 @@
+---
+# Main sass file to be converted to css
+---
+
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+section {
+  padding: 40px;
+  width: 900px;
+  max-width: 90%;
+}
+
+nav {
+  padding: 40px;
+  background-color: black;
+}
+
+.tab {
+  font-size: 1.25rem;
+  color: white;
+}
