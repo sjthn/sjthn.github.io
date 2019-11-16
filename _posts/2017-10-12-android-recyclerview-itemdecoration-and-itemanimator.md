@@ -9,7 +9,7 @@ tags: [android, recyclerview]
 
 <div dir="ltr" style="text-align:left;">
 
-In the <a href="/android-recyclerview-the-basics/index.html" target="_blank" rel="noopener">previous post</a> of the series I covered the basics of how RecyclerView works and how to create an Adapter. In this post we will look at how to use ItemDecoration to decorate the child views and ItemAnimator to animate them.
+In the <a href="/android-recyclerview-the-basics/" target="_blank" rel="noopener">previous post</a> of the series I covered the basics of how RecyclerView works and how to create an Adapter. In this post we will look at how to use ItemDecoration to decorate the child views and ItemAnimator to animate them.
 <h2 style="text-align:left;">ItemDecorator</h2>
 <div>This class is used to decorate child views in a RecyclerView. Decorations can be anything from setting dividers between list items or offsets between them, or even setting frames for grids. You can also decorate specific child items based on their view type.</div>
 <div></div>

@@ -7,7 +7,7 @@ tags: [android, recyclerview]
 
 # Android RecyclerView – Drag and Drop and Swipe to Dismiss
 
-In the <a href="/android-recyclerview-expandable-headers/index.html" target="_blank" rel="noopener">last post</a> I explained how you can implement an expandable recyclerview. In this post we will see how to implement swipe-to-remove and drag-and-drop gestures.
+In the <a href="/android-recyclerview-expandable-headers/" target="_blank" rel="noopener">last post</a> I explained how you can implement an expandable recyclerview. In this post we will see how to implement swipe-to-remove and drag-and-drop gestures.
 
 RecyclerView provides a built-in mechanism to enable drag and drop and swipe to dismiss gestures. This is a great advantage for Recyclerview compared to ListView where we had to write all the boilerplate for animating items for dragging and swiping. So if you are still using ListView this is a great feature for you to switch to RecyclerView.
 
