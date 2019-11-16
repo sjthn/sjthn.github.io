@@ -5,9 +5,11 @@ categories: [post]
 tags: [android, recyclerview]
 ---
 
+# Android RecyclerView – ItemDecoration and ItemAnimator
+
 <div dir="ltr" style="text-align:left;">
 
-In the <a href="https://therubberduckdev.wordpress.com/2017/10/09/android-recyclerview-the-basics/" target="_blank" rel="noopener">previous post</a> of the series I covered the basics of how RecyclerView works and how to create an Adapter. In this post we will look at how to use ItemDecoration to decorate the child views and ItemAnimator to animate them.
+In the <a href="/android-recyclerview-the-basics/index.html" target="_blank" rel="noopener">previous post</a> of the series I covered the basics of how RecyclerView works and how to create an Adapter. In this post we will look at how to use ItemDecoration to decorate the child views and ItemAnimator to animate them.
 <h2 style="text-align:left;">ItemDecorator</h2>
 <div>This class is used to decorate child views in a RecyclerView. Decorations can be anything from setting dividers between list items or offsets between them, or even setting frames for grids. You can also decorate specific child items based on their view type.</div>
 <div></div>
@@ -31,8 +33,8 @@ In the <a href="https://therubberduckdev.wordpress.com/2017/10/09/android-recycl
 <div>It provides four parameters: a Rect, the child view, RecyclerView and State.</div>
 <div>The Rect can be used to set necessary offset. RecyclerView gets the offset from this method and decorates child views accordingly.</div>
 <div></div>
-<div>Here is an example code which draws divider between each views in RecyclerView</div>
-[code language="java"]
+<div>Here is an example code which draws divider between each views in RecyclerView</div><br />
+<pre>
     @Override
     public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
         int count = parent.getChildCount();
@@ -43,12 +45,11 @@ In the <a href="https://therubberduckdev.wordpress.com/2017/10/09/android-recycl
             c.drawRect(0, bottom, width, bottom + DIVIDER_HEIGHT, paint);
         }
     }
-
-[/code]
-
+</pre>
+<br />
 In the code, based on the child count, the line is drawn at the bottom of each child view. The divider has the width equal to screen width and height of 1px. This is how it looks like:
 <div class="separator" style="clear:both;text-align:center;"><a style="margin-left:1em;margin-right:1em;" href="https://therubberduckdev.files.wordpress.com/2017/10/adcd5-recyclerview2bwith2bdividers.jpg"><img title="RecyclerView with ItemDecoration" src="https://therubberduckdev.files.wordpress.com/2017/10/adcd5-recyclerview2bwith2bdividers.jpg?w=169" alt="" width="360" height="640" border="0" /></a></div>
-Next we will look at some built-in animations available in RecyclerView.
+<br />Next we will look at some built-in animations available in RecyclerView.
 <h2 style="text-align:left;">ItemAnimator</h2>
 <div>This class provides mechanism for animating child views. It can be used to animate adding, removing, modifying and moving a child view. RecyclerView provides basic fade-in, fade-out, and translate animations. If you want custom animations you can subclass ItemAnimator.</div>
 <div></div>
@@ -61,12 +62,12 @@ Next we will look at some built-in animations available in RecyclerView.
 You can initiate an addition animation by adding new item to the data supplied to the adapter and notifying it for insertion. The default addition animation uses fade-in to add a new child view. This addition animation is based on predictive animation where adding a new item at a position causes other items to move to make way for it.
 
 Here is the code that initiates addition animation by adding a new <code>User</code> to an <code>ArrayList</code>:
-
-[code language="java"]
+<pre>
     User newUser = new UsersData().getNewUser();
     adapter.addNewUser(position, newUser);
     adapter.notifyItemInserted(position);
-[/code]
+</pre>
+<br />
 <div>
 <div class="separator" style="clear:both;text-align:left;"></div>
 <div class="separator" style="clear:both;text-align:center;"><a style="margin-left:1em;margin-right:1em;" href="https://therubberduckdev.files.wordpress.com/2017/10/d3698-recyclerview-default-add-animation.gif"><img class=" size-full wp-image-23 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-default-add-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></a></div>
@@ -74,11 +75,14 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 <h3 style="text-align:left;">2. Removal</h3>
 </div>
 <div>To remove item, remove it from the data list and call <code>notifyItemRemoved()</code> with the position of the item that is to be removed. The default animation fades-out the view to be removed. It also causes child views around it to move and fill the empty area. Checkout the code below.</div>
-[code language="java"]
+<br />
+<pre>
     adapter.removeUser(position);
     adapter.notifyItemRemoved(position);
-[/code]
+</pre>
+<br />
 <div>In the code, a User is removed from the ArrayList at the given position and the adapter is notified about it.</div>
+<br />
 </div>
 </div>
 <div></div>
@@ -89,11 +93,14 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 <h3 style="text-align:left;">3. Change</h3>
 </div>
 <div>When a child view's data changes, it gets reflected in the view. The default animation is cross-fade. The view fades-out with old values and then fades-in with the new values. To display item change call adapter's <code>notifyItemChanged()</code> method. Below is the code.</div>
-[code language="java"]
+<br />
+<pre>
     adapter.changeUser(position);
     adapter.notifyItemChanged(position);
-[/code]
+</pre>
+<br />
 <div>In the <code>changeUser</code> method I am changing the username and user image url at the particular position in the ArrayList.</div>
+<br />
 </div>
 </div>
 <div></div>
@@ -106,17 +113,19 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 <div>To move an item to another position, first change the position of the item in the data set. For example moving a <code>User</code> item from position 3 to 6. Then to reflect it in UI, use the adapter's <code>notifyItemMoved()</code> method passing in the initial and final positions. The move animation is a translate animation.</div>
 <div></div>
 <div><span style="background-color:#6aa84f;"><span style="color:#f3f3f3;">Note that when querying an item's position while it is being animated, the value returned may be -1. This is because until the animation's final layout pass completes, the position returned will be -1. So check the following condition when getting a view's position.</span></span></div>
-[code language="java"]
+<br />
+<pre>
     if (position != RecyclerView.NO_POSITION) {
         //...
     }
-[/code]
+</pre>
+<br />
 <div></div>
 <div>
 
 Checkout the DefaultItemAnimator class for more info. If you want to use custom animations subclass either DefaultItemAnimator or ItemAnimator class. Or else, use this awesome library <a href="https://github.com/wasabeef/recyclerview-animators">https://github.com/wasabeef/recyclerview-animators</a>Checkout the source code <a href="https://github.com/sjthn/RecyclerViewDemo/tree/decorator-and-animator" target="_blank" rel="noopener">here</a>.
 
-If you have any feedback use the comments section below. In the next post we'll see some advanced RecyclerView use-cases.
+In the next post we'll see some advanced RecyclerView use-cases.
 
 </div>
 </div>

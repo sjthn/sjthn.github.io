@@ -5,7 +5,9 @@ categories: [post]
 tags: [android, recyclerview]
 ---
 
-In the <a href="https://therubberduckdev.wordpress.com/2017/10/17/android-recyclerview-expandable-headers/">last post</a> I explained how you can implement an expandable recyclerview. In this post we will see how to implement swipe-to-remove and drag-and-drop gestures.
+# Android RecyclerView – Drag and Drop and Swipe to Dismiss
+
+In the <a href="/android-recyclerview-expandable-headers/index.html" target="_blank" rel="noopener">last post</a> I explained how you can implement an expandable recyclerview. In this post we will see how to implement swipe-to-remove and drag-and-drop gestures.
 
 RecyclerView provides a built-in mechanism to enable drag and drop and swipe to dismiss gestures. This is a great advantage for Recyclerview compared to ListView where we had to write all the boilerplate for animating items for dragging and swiping. So if you are still using ListView this is a great feature for you to switch to RecyclerView.
 
@@ -62,7 +64,7 @@ That's it. We have implemented the drag-and-drop and swipe-to-dismiss gestures. 
 
 Now what if we want to move the items only by touching a handle something like below:
 
-[caption id="attachment_331" align="alignnone" width="1520"]<img class="alignnone size-full wp-image-331" src="https://therubberduckdev.files.wordpress.com/2017/10/components-listcontrols-reorder.png" alt="components-listcontrols-reorder" width="1520" height="624" /> Source: <a href="https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls" target="_blank" rel="noopener">Material Design Guidelines</a>[/caption]
+<img class="alignnone size-full wp-image-331" src="https://therubberduckdev.files.wordpress.com/2017/10/components-listcontrols-reorder.png" alt="components-listcontrols-reorder" width="1520" height="624" /> Source: <a href="https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls" target="_blank" rel="noopener">Material Design Guidelines</a>
 
 For that, the ItemTouchHelper provides <code>startDrag()</code> and <code>startSwipe()</code> methods to manually start drag and swipe actions respectively. Let's implement this.
 
@@ -108,5 +110,3 @@ Now you will get a nice fade as below when swiping:
 <img class=" size-full wp-image-386 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-swipe-fade-out.gif" alt="recyclerview-swipe-dismiss-item-fade-out" width="378" height="672" />
 
 Checkout the full source code <a href="https://github.com/sjthn/RecyclerViewDemo/tree/advanced-usecases">here</a>.
-
-If you have feedback, comment below.

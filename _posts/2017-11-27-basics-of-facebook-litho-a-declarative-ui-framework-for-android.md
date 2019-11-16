@@ -5,6 +5,8 @@ categories: [post]
 tags: [android, fblitho]
 ---
 
+# Basics of Facebook Litho – a Declarative UI framework for Android
+
 Facebook this year released <a href="https://fblitho.com/" target="_blank" rel="noopener">Litho</a>, a declarative UI framework primarily for rendering complex lists.
 <blockquote>Litho is a library which allows us to create complex UIs declaratively with optimizations under the hood.</blockquote>
 <h3>Inspirations from React</h3>
@@ -54,7 +56,7 @@ Litho uses <strong>Yoga</strong>, a layout engine responsible for flatter view h
 <pre>implementation 'com.facebook.soloader:soloader:0.2.0'</pre>
 Next in your Application class' <code>onCreate()</code>, initialize the SoLoader:
 <pre>SoLoader.init(this, false);</pre>
-
+<br />
 <hr />
 
 Now let's try creating a simple component. We will create a TextView with some text in it.
@@ -273,7 +275,3 @@ Until then you can learn more about Litho and Sections from the <a href="https:/
 	<li><a href="https://fblitho.com/" target="_blank" rel="noopener">Official docs</a></li>
 	<li><a href="https://github.com/facebook/litho" target="_blank" rel="noopener">Official GitHub source codes</a></li>
 </ul>
-
-<hr />
-
-If you found this post useful please like and share it. Also checkout my previous posts. Thanks!

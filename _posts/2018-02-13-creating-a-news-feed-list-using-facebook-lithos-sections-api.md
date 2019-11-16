@@ -5,7 +5,9 @@ categories: [post]
 tags: [android, fblitho]
 ---
 
-In my <a href="https://therubberduckdev.wordpress.com/2017/11/27/basics-of-facebook-litho-a-declarative-ui-framework-for-android/" target="_blank" rel="noopener">previous post</a> I have explained the basics of Litho. In this post let's create a complex list of items using the Sections API in Litho.
+# Creating a News Feed list using Facebook Litho’s Sections API
+
+In my <a href="/basics-of-facebook-litho-a-declarative-ui-framework-for-android/index.html" target="_blank" rel="noopener">previous post</a> I have explained the basics of Litho. In this post let's create a complex list of items using the Sections API in Litho.
 
 With the basics in mind let's create a complex RecyclerView showing some fake news feeds with different view types, nested horizontal scrolling, pull-to-refresh and lazy loading 15 items in a batch.
 <h3>Library dependencies</h3>
@@ -460,6 +462,3 @@ So finally this is how the whole app looks like:
 You can also enable click events for each items like I showed you in my previous post on Litho.
 
 The source code of the app that I used for this post on <a href="https://github.com/sjthn/LithoNewsFeedDemo" target="_blank" rel="noopener">github</a>.
-
-If you found this helpful please like and share it. If you have any questions feel free to comment below.
-<p style="text-align:center;">***</p>

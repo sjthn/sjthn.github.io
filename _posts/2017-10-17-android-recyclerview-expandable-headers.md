@@ -5,9 +5,11 @@ categories: [post]
 tags: [android, recyclerview]
 ---
 
+# Android RecyclerView – Expandable Headers
+
 RecyclerView provides several optimisations over ListView. But it doesn't provide an important component which ListView provides out-of-the-box. And that's the ExpandableListView. Many of us still require such a kind of design where headers can be expanded/collapsed to show/hide child views. In this post, we will look at an idea of how to implement this functionality using RecyclerView.
 
-If you are not familiar with RecyclerView, you can go through my previous blog posts <a href="https://therubberduckdev.wordpress.com/2017/10/09/android-recyclerview-the-basics/" target="_blank" rel="noopener">here</a> and <a href="https://therubberduckdev.wordpress.com/2017/10/12/android-recyclerview-itemdecoration-and-itemanimator/" target="_blank" rel="noopener">here</a>.
+If you are not familiar with RecyclerView, you can go through my previous blog posts <a href="/android-recyclerview-the-basics/index.html" target="_blank" rel="noopener">here</a> and <a href="/android-recyclerview-itemdecoration-and-itemanimator/index.html" target="_blank" rel="noopener">here</a>.
 
 Let's consider a list of employees who are categorised according to their designation. The designations and employees are shown using different view types. The designation view act as header and employee views act as children.
 
@@ -97,7 +99,7 @@ public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         bindHeaderViewHolder(holder, position, viewType);
     }
 }</pre>
-
+<br />
 <pre>private void bindHeaderViewHolder(RecyclerView.ViewHolder holder, int position, ViewType viewType) {
     int dataIndex = viewType.getDataIndex();
     SectionHeaderViewHolder headerViewHolder = (SectionHeaderViewHolder) holder;
@@ -146,5 +148,3 @@ You can build upon this example for more complex and feature rich Expandable Rec
 Full source code can be found <a href="https://github.com/sjthn/RecyclerViewDemo/tree/expandable-recyclerview">here</a>.
 
 In the next posts I will cover more use-cases with RecyclerView.
-
-Thanks for reading. If you have any feedback comment below.

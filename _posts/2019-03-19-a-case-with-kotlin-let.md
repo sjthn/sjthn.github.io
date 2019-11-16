@@ -5,6 +5,8 @@ categories: [post]
 tags: [kotlin]
 ---
 
+# A case with Kotlin let
+
 <p class="graf graf--p">One of my test cases were failing. It was to verify that a particular function is getting called when data is empty. Instead it was getting called twice which was unexpected.</p>
 <p class="graf graf--p">The code I was testing had a <code class="markup--code markup--p-code">let</code> block and Elvis operator. If a value is non null then let block is executed. Else the expression to the right of Elvis operator gets executed.</p>
 <p class="graf graf--p">Kotlin’s <code class="markup--code markup--p-code">let</code> function helps executing code within its block scope by taking the object on which it is invoked as parameter. <code class="markup--code markup--p-code">let</code> can be ideally used on nullable objects to execute something only if they are non-null.</p>
@@ -17,11 +19,9 @@ tags: [kotlin]
 <p class="graf graf--p">But I have <code class="markup--code markup--p-code">view.showEmptyState()</code> only at two places. One inside let block and other to the right of elvis operator.</p>
 <p class="graf graf--p">Surprised I set out to find what was going wrong.</p>
 <p class="graf graf--p">First I went to Kotlin doc for <code class="markup--code markup--p-code">let</code>:</p>
-&nbsp;
-
 </div>
 
-[caption id="attachment_730" align="alignnone" width="1450"]<img class="alignnone size-full wp-image-730" src="https://therubberduckdev.files.wordpress.com/2019/03/screen-shot-2019-03-09-at-1.50.37-pm.png" alt="Screen Shot 2019-03-09 at 1.50.37 PM" width="1450" height="170" /> Source: <a class="markup--anchor markup--p-anchor" href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html" target="_blank" rel="nofollow noopener noreferrer">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html</a>[/caption]
+<img class="alignnone size-full wp-image-730" src="https://therubberduckdev.files.wordpress.com/2019/03/screen-shot-2019-03-09-at-1.50.37-pm.png" alt="Screen Shot 2019-03-09 at 1.50.37 PM" width="1450" height="170" /> Source: <a class="markup--anchor markup--p-anchor" href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html" target="_blank" rel="nofollow noopener noreferrer">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html</a>
 <p class="graf graf--p">Take a look at the last few words of above sentence. It says <code class="markup--code markup--p-code">let</code> returns a result. That caught my eyes. I again went to the code and found the IDE hint for the return statement.</p>
 <p class="graf graf--p">So last line of the <code class="markup--code markup--p-code">let</code> is implied as the return statement.</p>
 <p class="graf graf--p">In my code the last line is <code class="markup--code markup--p-code">analytics?.triggerEvent(validData)</code> . If you notice <code class="markup--code markup--p-code">analytics</code> is a nullable type. Since it is not mocked or tested, it is always null!</p>

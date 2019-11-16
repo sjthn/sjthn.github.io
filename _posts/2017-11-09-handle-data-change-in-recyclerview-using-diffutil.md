@@ -5,9 +5,11 @@ categories: [post]
 tags: [android, recyclerview, diffutil]
 ---
 
+# Handling data change in RecyclerView gracefully using DiffUtil
+
 <a href="https://developer.android.com/reference/android/support/v7/util/DiffUtil.html" target="_blank" rel="noopener">DiffUtil</a> is an Android support library utility class which helps to ease out the process of finding which item changed in a list of data. It helps to calculate the difference between an old list and a new list and trigger updates to list items.
 
-If you are new to RecyclerView checkout my previous <a href="https://therubberduckdev.wordpress.com/2017/10/" target="_blank" rel="noopener">posts</a>.
+If you are new to RecyclerView checkout my previous posts.
 
 DiffUtil can be very useful when showing a list of data using RecyclerView where the data can be changed in future based on new values. Unlike ListView, <a href="https://developer.android.com/reference/android/support/v7/widget/RecyclerView.Adapter.html" target="_blank" rel="noopener">RecyclerView's adapter</a> provides the following notify methods to only update those items that changed.
 
