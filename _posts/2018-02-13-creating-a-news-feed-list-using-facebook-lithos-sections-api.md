@@ -193,6 +193,11 @@ And below is how our Card component will look like for single image news feed an
 
 &nbsp;
 
+<div class="separator" style="clear:both;text-align:center;">
+<img class="size-full wp-image-680 aligncenter" src="/assets/imgs/news_feed_single.png" alt="news feed single" width="468" height="468" />
+<img src="/assets/imgs/multi-image-news-feed-gif.gif" alt="multi image news feed" width="263" height="468">
+</div>
+
 [gallery ids="707,706" type="rectangular"]
 
 So we have declared how our UI will look for each news feed.
@@ -437,7 +442,9 @@ Here I am checking if we reached the list end. And also checking if fetching is 
 
 When we run the app, this is how lazy loading looks like:
 
-<img class="alignnone size-full wp-image-714" src="https://therubberduckdev.files.wordpress.com/2018/02/lazy-loading-recyclerview.gif" alt="lazy-loading-recyclerview" width="356" height="634" />
+<div class="separator" style="clear:both;text-align:center;">
+<img class="alignnone size-full wp-image-714" src="/assets/imgs/lazy-loading-recyclerview.gif" alt="lazy-loading-recyclerview" width="356" height="634" />
+</div>
 
 Next let's see how to implement Pull-To-Refresh. This is very easy. In your RecyclerCollectionComponent there is an option to disable PTR using <code>disablePTR(true)</code>. If you didn't mention it, then by default PTR will be enabled.
 
@@ -457,7 +464,7 @@ Here whenever you pull to refresh, this method gets called. Here you can call th
 
 So finally this is how the whole app looks like:
 
-<a href="https://youtu.be/an8O4QjLQ_I" target="_blank" rel="noopener">https://youtu.be/an8O4QjLQ_I</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/an8O4QjLQ_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can also enable click events for each items like I showed you in my previous post on Litho.
 

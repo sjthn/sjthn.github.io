@@ -58,13 +58,18 @@ And finally to integrate this ItemTouchHelper with our RecyclerView, we call <co
 <pre>touchHelper.attachToRecyclerView(userRecyclerView);</pre>
 That's it. We have implemented the drag-and-drop and swipe-to-dismiss gestures. This is how it looks:
 
-<img class=" size-full wp-image-321 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-itemtouchhelper1.gif" alt="recyclerview-itemtouchhelper" width="410" height="730" />
+<div class="separator" style="clear:both;text-align:center;"><img class=" size-full wp-image-321 aligncenter" src="/assets/imgs/recyclerview-itemtouchhelper1.gif" alt="recyclerview-itemtouchhelper" width="288" height="512" />
+</div>
 
 &nbsp;
 
 Now what if we want to move the items only by touching a handle something like below:
 
-<img class="alignnone size-full wp-image-331" src="https://therubberduckdev.files.wordpress.com/2017/10/components-listcontrols-reorder.png" alt="components-listcontrols-reorder" width="1520" height="624" /> Source: <a href="https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls" target="_blank" rel="noopener">Material Design Guidelines</a>
+<div class="separator" style="clear:both;text-align:center;">
+<img class="alignnone size-full wp-image-331" src="/assets/imgs/components-listcontrols-reorder.png" alt="components-listcontrols-reorder" width="628" height="256" />
+<br/>
+Source: <a href="https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls" target="_blank" rel="noopener">Material Design Guidelines</a>
+</div>
 
 For that, the ItemTouchHelper provides <code>startDrag()</code> and <code>startSwipe()</code> methods to manually start drag and swipe actions respectively. Let's implement this.
 
@@ -84,7 +89,9 @@ In onBindViewHolder:
 });</pre>
 Result:
 
-<img class=" size-full wp-image-368 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-manual-drag-drop.gif" alt="recyclerview-item-touch-helper-reorder" width="378" height="672" />
+<div class="separator" style="clear:both;text-align:center;">
+<img class=" size-full wp-image-368 aligncenter" src="/assets/imgs/recyclerview-manual-drag-drop.gif" alt="recyclerview-item-touch-helper-reorder" width="288" height="512" />
+</div>
 
 &nbsp;
 
@@ -107,6 +114,8 @@ public void onChildDraw(Canvas c,
 }</pre>
 Now you will get a nice fade as below when swiping:
 
-<img class=" size-full wp-image-386 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-swipe-fade-out.gif" alt="recyclerview-swipe-dismiss-item-fade-out" width="378" height="672" />
+<div class="separator" style="clear:both;text-align:center;">
+<img class=" size-full wp-image-386 aligncenter" src="/assets/imgs/recyclerview-swipe-fade-out.gif" alt="recyclerview-swipe-dismiss-item-fade-out" width="288" height="512" />
+</div>
 
 Checkout the full source code <a href="https://github.com/sjthn/RecyclerViewDemo/tree/advanced-usecases">here</a>.

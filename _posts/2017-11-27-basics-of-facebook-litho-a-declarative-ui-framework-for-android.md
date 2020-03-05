@@ -75,7 +75,7 @@ Now in our Activity's <code>onCreate()</code> we call <code>setContentView()</c
 setContentView(lithoView);</pre>
 This outputs the below screen:
 
-<img class="size-medium wp-image-667 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/11/litho_text_component.png?w=600" alt="A simple Text Component" width="300" height="96" />
+<img class="size-medium wp-image-667 aligncenter" src="/assets/imgs/litho_text_component.png" alt="A simple Text Component" width="300" height="96" />
 
 OK. Looks good. Now let's create a component with two Text components in it, one for title and another for description.
 <h3>LayoutSpec - Create a Layout with multiple child views</h3>
@@ -115,7 +115,7 @@ Notice here that we create the title and desription Text components and pass the
 
 This is how the screen looks:
 
-<img class="size-medium wp-image-672 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/11/litho_title_desc_text_component1.png?w=600" alt="Title and description using Text Component" width="300" height="104" />
+<img class="size-medium wp-image-672 aligncenter" src="/assets/imgs/litho_title_desc_text_component1.png?w=600" alt="Title and description using Text Component" width="300" height="104" />
 
 The alignments of the components are done by the Yoga framework. It uses APIs similar to flexbox for laying out components. To know the concepts of flexbox check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="_blank" rel="noopener">this site</a>.
 
@@ -136,7 +136,7 @@ Litho also provides ways to set border styles. If you want to display a dashed l
   .build();</pre>
 This is how it looks:
 
-<img class="size-medium wp-image-673 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/11/litho_component_border.png?w=600" alt="Component with dashed border style" width="300" height="109" />
+<img class="size-medium wp-image-673 aligncenter" src="/assets/imgs/litho_component_border.png" alt="Component with dashed border style" width="300" height="109" />
 <h3>Prop - Passing values to components</h3>
 Now let's pass some dynamic texts to show in Text components. For this we use <code>@Prop</code> annotation.
 
@@ -236,7 +236,7 @@ static Component onCreateLayout(
 }</pre>
 Now the UI looks as below:
 
-<img class="size-medium wp-image-678 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/11/litho_button_and_text_counter.png?w=600" alt="litho_button_and_text_counter" width="300" height="94" />
+<img class="size-medium wp-image-678 aligncenter" src="/assets/imgs/litho_button_and_text_counter.png" alt="litho_button_and_text_counter" width="300" height="94" />
 
 Next we want to update the count when the button is pressed every time.
 
@@ -262,7 +262,7 @@ Finally we should set the click event handler on the component builder. We can s
   .build();</pre>
 Now when you run the app you can update the count.
 
-<img class="size-full wp-image-680 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/11/fblitho_event_and_state_change.gif" alt="fblitho_event_and_state_change" width="205" height="365" />
+<img class="size-full wp-image-680 aligncenter" src="/assets/imgs/fblitho_event_and_state_change.gif" alt="fblitho_event_and_state_change" width="205" height="365" />
 
 That's it. Now you should have understood the basics of how UIs can be rendered using Litho.
 

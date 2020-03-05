@@ -11,7 +11,7 @@ tags: [kotlin]
 <p class="graf graf--p">The code I was testing had a <code class="markup--code markup--p-code">let</code> block and Elvis operator. If a value is non null then let block is executed. Else the expression to the right of Elvis operator gets executed.</p>
 <p class="graf graf--p">Kotlin’s <code class="markup--code markup--p-code">let</code> function helps executing code within its block scope by taking the object on which it is invoked as parameter. <code class="markup--code markup--p-code">let</code> can be ideally used on nullable objects to execute something only if they are non-null.</p>
 <p class="graf graf--p">Below is the code on which the test case was written.</p>
-<img class="alignnone size-full wp-image-731" src="https://therubberduckdev.files.wordpress.com/2019/03/kotlin-let.png" alt="kotlin-let" width="1514" height="698" />
+<img class="alignnone size-full wp-image-731" src="/assets/imgs/kotlin-let.png" alt="kotlin-let" width="623" height="287" />
 <div>
 <p class="graf graf--p">The test case was to check whether <code class="markup--code markup--p-code">view.showEmptyState()</code> was getting called when <code class="markup--code markup--p-code">validData</code> was empty. But it was failing.</p>
 <p class="graf graf--p">The value from <code class="markup--code markup--p-code">getValidData()</code> was actually empty. So according to the code it was supposed to pass. I was totally confused.</p>
@@ -21,7 +21,11 @@ tags: [kotlin]
 <p class="graf graf--p">First I went to Kotlin doc for <code class="markup--code markup--p-code">let</code>:</p>
 </div>
 
-<img class="alignnone size-full wp-image-730" src="https://therubberduckdev.files.wordpress.com/2019/03/screen-shot-2019-03-09-at-1.50.37-pm.png" alt="Screen Shot 2019-03-09 at 1.50.37 PM" width="1450" height="170" /> Source: <a class="markup--anchor markup--p-anchor" href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html" target="_blank" rel="nofollow noopener noreferrer">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html</a>
+<div class="separator" style="clear:both;text-align:center;">
+<img class="alignnone size-full wp-image-730" src="/assets/imgs/screen-shot-2019-03-09-at-1.50.37-pm.png" alt="Screen Shot 2019-03-09 at 1.50.37 PM" width="725" height="85" />
+<br/>
+Source: <a class="markup--anchor markup--p-anchor" href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html" target="_blank" rel="nofollow noopener noreferrer">https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/let.html</a>
+</div>
 <p class="graf graf--p">Take a look at the last few words of above sentence. It says <code class="markup--code markup--p-code">let</code> returns a result. That caught my eyes. I again went to the code and found the IDE hint for the return statement.</p>
 <p class="graf graf--p">So last line of the <code class="markup--code markup--p-code">let</code> is implied as the return statement.</p>
 <p class="graf graf--p">In my code the last line is <code class="markup--code markup--p-code">analytics?.triggerEvent(validData)</code> . If you notice <code class="markup--code markup--p-code">analytics</code> is a nullable type. Since it is not mocked or tested, it is always null!</p>

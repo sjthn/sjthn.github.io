@@ -141,7 +141,9 @@ Here the <code>headerExpandTracker</code> is checked to see if header is expande
 
 After implementing all, this is how the RecyclerView looks like:
 
-<img class=" size-large wp-image-212 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/android-expandable-recyclerview.gif?w=576" alt="android-expandable-recyclerview" width="576" height="1024" />
+<div class="separator" style="clear:both;text-align:center;">
+<img class=" size-large wp-image-212 aligncenter" src="/assets/imgs/android-expandable-recyclerview.gif" alt="android-expandable-recyclerview" width="360" height="640" />
+</div>
 
 You can build upon this example for more complex and feature rich Expandable RecyclerView.
 

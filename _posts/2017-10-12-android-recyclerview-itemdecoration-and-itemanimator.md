@@ -48,7 +48,7 @@ In the <a href="/android-recyclerview-the-basics/" target="_blank" rel="noopener
 </pre>
 <br />
 In the code, based on the child count, the line is drawn at the bottom of each child view. The divider has the width equal to screen width and height of 1px. This is how it looks like:
-<div class="separator" style="clear:both;text-align:center;"><a style="margin-left:1em;margin-right:1em;" href="https://therubberduckdev.files.wordpress.com/2017/10/adcd5-recyclerview2bwith2bdividers.jpg"><img title="RecyclerView with ItemDecoration" src="https://therubberduckdev.files.wordpress.com/2017/10/adcd5-recyclerview2bwith2bdividers.jpg?w=169" alt="" width="360" height="640" border="0" /></a></div>
+<div class="separator" style="clear:both;text-align:center;"><img title="RecyclerView with ItemDecoration" src="/assets/imgs/recyclerview2bwith2bdividers.jpg" alt="" width="360" height="640" border="0" /></div>
 <br />Next we will look at some built-in animations available in RecyclerView.
 <h2 style="text-align:left;">ItemAnimator</h2>
 <div>This class provides mechanism for animating child views. It can be used to animate adding, removing, modifying and moving a child view. RecyclerView provides basic fade-in, fade-out, and translate animations. If you want custom animations you can subclass ItemAnimator.</div>
@@ -70,7 +70,7 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 <br />
 <div>
 <div class="separator" style="clear:both;text-align:left;"></div>
-<div class="separator" style="clear:both;text-align:center;"><a style="margin-left:1em;margin-right:1em;" href="https://therubberduckdev.files.wordpress.com/2017/10/d3698-recyclerview-default-add-animation.gif"><img class=" size-full wp-image-23 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-default-add-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></a></div>
+<div class="separator" style="clear:both;text-align:center;"><img class=" size-full wp-image-23 aligncenter" src="/assets/imgs/recyclerview-default-add-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></div>
 <div class="separator" style="clear:both;text-align:left;"></div>
 <h3 style="text-align:left;">2. Removal</h3>
 </div>
@@ -86,7 +86,7 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 </div>
 </div>
 <div></div>
-<div><img class=" size-full wp-image-25 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-default-remove-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></div>
+<div class="separator" style="clear:both;text-align:center;"><img class=" size-full wp-image-25 aligncenter" src="/assets/imgs/recyclerview-default-remove-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></div>
 <div dir="ltr" style="text-align:left;">
 <div>
 <div>
@@ -104,7 +104,7 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 </div>
 </div>
 <div></div>
-<div><img class=" size-full wp-image-26 aligncenter" src="https://therubberduckdev.files.wordpress.com/2017/10/recyclerview-default-change-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></div>
+<div class="separator" style="clear:both;text-align:center;"><img class=" size-full wp-image-26 aligncenter" src="/assets/imgs/recyclerview-default-change-animation.gif" alt="Android RecyclerView - ItemDecoration and ItemAnimator" width="288" height="512" /></div>
 <div dir="ltr" style="text-align:left;">
 <div>
 <div>
@@ -125,6 +125,8 @@ Here is the code that initiates addition animation by adding a new <code>User</c
 
 Checkout the DefaultItemAnimator class for more info. If you want to use custom animations subclass either DefaultItemAnimator or ItemAnimator class. Or else, use this awesome library <a href="https://github.com/wasabeef/recyclerview-animators">https://github.com/wasabeef/recyclerview-animators</a>Checkout the source code <a href="https://github.com/sjthn/RecyclerViewDemo/tree/decorator-and-animator" target="_blank" rel="noopener">here</a>.
 
+<br/>
+<br/>
 In the next post we'll see some advanced RecyclerView use-cases.
 
 </div>
