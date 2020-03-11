@@ -4,23 +4,38 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
-}
-
-section {
-  padding: 40px;
-  width: 900px;
-  max-width: 90%;
-  line-height: 1.5;
+  margin: 0px;
 }
 
 nav {
-  padding: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: black;
+}
+
+section {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  max-width: 1000px;
+  line-height: 1.5;
 }
 
 .tab {
   font-size: 1.25rem;
   color: white;
+}
+
+.blogposts_listing {
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+.post_list_item {
+  padding-bottom: 12px;
 }
 
 pre {

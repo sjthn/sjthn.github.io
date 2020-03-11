@@ -3,9 +3,9 @@ layout: default
 title: "Blogs"
 ---
 
-<ul>
+<ul class="blogposts_listing">
   {% for post in site.posts %}
-    <li>
+    <li class="post_list_item">
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
