@@ -3,6 +3,7 @@ layout: default
 title: "Android RecyclerView - The Basics"
 categories: [post]
 tags: [android, recyclerview]
+published: 2017-10-09
 ---
 
 # Android RecyclerView - The Basics

@@ -3,6 +3,7 @@ layout: default
 title: "Basics of Facebook Litho – a Declarative UI framework for Android"
 categories: [post]
 tags: [android, fblitho]
+published: 2017-11-27
 ---
 
 # Basics of Facebook Litho – a Declarative UI framework for Android

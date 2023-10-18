@@ -3,6 +3,7 @@ layout: default
 title: "A case with Kotlin let"
 categories: [post]
 tags: [kotlin]
+published: 2019-03-19
 ---
 
 # A case with Kotlin let

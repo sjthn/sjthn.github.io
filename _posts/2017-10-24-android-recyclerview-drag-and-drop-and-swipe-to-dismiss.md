@@ -3,6 +3,7 @@ layout: default
 title: "Android RecyclerView – Drag and Drop and Swipe to Dismiss"
 categories: [post]
 tags: [android, recyclerview]
+published: 2017-10-24
 ---
 
 # Android RecyclerView – Drag and Drop and Swipe to Dismiss

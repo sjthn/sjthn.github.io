@@ -3,6 +3,7 @@ layout: default
 title: "Handling data change in RecyclerView gracefully using DiffUtil"
 categories: [post]
 tags: [android, recyclerview, diffutil]
+published: 2017-11-09
 ---
 
 # Handling data change in RecyclerView gracefully using DiffUtil

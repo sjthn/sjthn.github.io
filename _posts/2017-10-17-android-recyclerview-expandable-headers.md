@@ -3,6 +3,7 @@ layout: default
 title: "Android RecyclerView – Expandable Headers"
 categories: [post]
 tags: [android, recyclerview]
+published: 2017-10-17
 ---
 
 # Android RecyclerView – Expandable Headers
