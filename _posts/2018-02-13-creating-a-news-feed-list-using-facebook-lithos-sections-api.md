@@ -3,7 +3,6 @@ layout: default
 title: "Creating a News Feed list using Facebook Litho’s Sections API"
 categories: [post]
 tags: [android, fblitho]
-published: 2018-02-13
 ---
 
 # Creating a News Feed list using Facebook Litho’s Sections API

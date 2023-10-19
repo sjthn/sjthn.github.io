@@ -3,7 +3,6 @@ layout: default
 title: "Android RecyclerView – ItemDecoration and ItemAnimator"
 categories: [post]
 tags: [android, recyclerview]
-published: 2017-10-12
 ---
 
 # Android RecyclerView – ItemDecoration and ItemAnimator

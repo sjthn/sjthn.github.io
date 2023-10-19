@@ -3,7 +3,6 @@ layout: default
 title: "Steps to setup a blog using Jekyll"
 categories: [post]
 tags: [jekyll]
-published: 2019-11-17
 ---
 
 # Steps to setup a blog using Jekyll

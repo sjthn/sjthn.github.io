@@ -3,7 +3,6 @@ layout: default
 title: "How to learn React Native – For Android/iOS devs"
 categories: [post]
 tags: [android, ios, react-native]
-published: 2017-12-18
 ---
 
 # How to learn React Native – For Android/iOS devs
