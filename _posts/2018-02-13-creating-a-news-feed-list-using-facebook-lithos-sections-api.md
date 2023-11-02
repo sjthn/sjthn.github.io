@@ -6,6 +6,7 @@ tags: [android, fblitho]
 ---
 
 # Creating a News Feed list using Facebook Litho’s Sections API
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 In my <a href="/basics-of-facebook-litho-a-declarative-ui-framework-for-android/" target="_blank" rel="noopener">previous post</a> I have explained the basics of Litho. In this post let's create a complex list of items using the Sections API in Litho.
 

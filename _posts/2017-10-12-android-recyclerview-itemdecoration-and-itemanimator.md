@@ -6,6 +6,7 @@ tags: [android, recyclerview]
 ---
 
 # Android RecyclerView – ItemDecoration and ItemAnimator
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 <div dir="ltr" style="text-align:left;">
 

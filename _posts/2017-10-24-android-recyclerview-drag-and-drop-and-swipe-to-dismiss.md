@@ -6,6 +6,7 @@ tags: [android, recyclerview]
 ---
 
 # Android RecyclerView – Drag and Drop and Swipe to Dismiss
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 In the <a href="/android-recyclerview-expandable-headers/" target="_blank" rel="noopener">last post</a> I explained how you can implement an expandable recyclerview. In this post we will see how to implement swipe-to-remove and drag-and-drop gestures.
 

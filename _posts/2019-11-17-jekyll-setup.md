@@ -6,6 +6,7 @@ tags: [jekyll]
 ---
 
 # Steps to setup a blog using Jekyll
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 Hello folks. I recently moved my blog posts from wordpress.com to github pages, and I am using Jekyll for static site generation from markdown files. Jekyll is a ruby gem for generating static sites.
 

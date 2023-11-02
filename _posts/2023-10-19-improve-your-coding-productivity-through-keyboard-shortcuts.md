@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Efficient coding using keyboard shortcuts - Android Studio
-date: 2023-11-02 02:05 +0530
+date: 2023-11-02 14:05 +0530
 ---
 # Efficient coding using keyboard shortcuts - Android Studio
-*- {{ page.date | date: "%b %-d. %Y" }}*
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 Using keyboard shortcuts while writing code helps you speed up your work because as developers you will be majorly using keyboard. So doing most of the stuffs using keyboard helps you reduce switching between mouse and keyboard which takes more time comparatively. The only thing is that you have to do is to memorize and keep on using the shortcuts to use them effectively.
 

@@ -6,6 +6,7 @@ tags: [android, recyclerview, diffutil]
 ---
 
 # Handling data change in RecyclerView gracefully using DiffUtil
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 <a href="https://developer.android.com/reference/android/support/v7/util/DiffUtil.html" target="_blank" rel="noopener">DiffUtil</a> is an Android support library utility class which helps to ease out the process of finding which item changed in a list of data. It helps to calculate the difference between an old list and a new list and trigger updates to list items.
 

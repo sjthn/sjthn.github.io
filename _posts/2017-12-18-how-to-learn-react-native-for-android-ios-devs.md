@@ -6,6 +6,7 @@ tags: [android, ios, react-native]
 ---
 
 # How to learn React Native – For Android/iOS devs
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 <blockquote>This post was originally posted on <a href="https://dev.to/srijith_un/how-to-learn-react-native---for-androidios-devs-2mj" target="_blank" rel="noopener">dev.to</a></blockquote>
 React Native is the hot topic these days for building mobile apps. It is a Javascript framework for building mobile apps for both iOS and Android with almost same codebase. Unlike other hybrid frameworks it provides great flexibility for developers as they can write same code for both platforms as well as platform-specific code. React Native provides most of the native features of each platform. Since it has a huge community you can also find libraries for almost anything you want to implement.

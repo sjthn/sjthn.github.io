@@ -6,6 +6,7 @@ tags: [android, recyclerview]
 ---
 
 # Android RecyclerView – Expandable Headers
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 RecyclerView provides several optimisations over ListView. But it doesn't provide an important component which ListView provides out-of-the-box. And that's the ExpandableListView. Many of us still require such a kind of design where headers can be expanded/collapsed to show/hide child views. In this post, we will look at an idea of how to implement this functionality using RecyclerView.
 

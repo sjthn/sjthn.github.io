@@ -6,6 +6,7 @@ tags: [android, fblitho]
 ---
 
 # Basics of Facebook Litho – a Declarative UI framework for Android
+*- {{ page.date | date: "%b %-d, %Y" }}*
 
 Facebook this year released <a href="https://fblitho.com/" target="_blank" rel="noopener">Litho</a>, a declarative UI framework primarily for rendering complex lists.
 <blockquote>Litho is a library which allows us to create complex UIs declaratively with optimizations under the hood.</blockquote>
