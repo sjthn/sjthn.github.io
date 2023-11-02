@@ -8,7 +8,7 @@ title: "Blogs"
     <div>
       <li class="post_list_item">
         <a href="{{ post.url }}">{{ post.title }}</a>
-        <div>Published on: {{ post.date | date: "%-d %B %Y" }}</div>
+        <div>Published on: {{ post.date | date: "%b %-d, %Y" }}</div>
       </li>
     </div>
   {% endfor %}
