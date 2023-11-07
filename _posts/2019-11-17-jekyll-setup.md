@@ -3,10 +3,8 @@ layout: default
 title: "Steps to setup a blog using Jekyll"
 categories: [post]
 tags: [jekyll]
+date: 2019-11-17 14:05 +0530
 ---
-
-# Steps to setup a blog using Jekyll
-*- {{ page.date | date: "%b %-d, %Y" }}*
 
 Hello folks. I recently moved my blog posts from wordpress.com to github pages, and I am using Jekyll for static site generation from markdown files. Jekyll is a ruby gem for generating static sites.
 

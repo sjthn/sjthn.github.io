@@ -3,10 +3,8 @@ layout: default
 title: "Android RecyclerView – ItemDecoration and ItemAnimator"
 categories: [post]
 tags: [android, recyclerview]
+date: 2017-10-12 14:05 +0530
 ---
-
-# Android RecyclerView – ItemDecoration and ItemAnimator
-*- {{ page.date | date: "%b %-d, %Y" }}*
 
 <div dir="ltr" style="text-align:left;">
 

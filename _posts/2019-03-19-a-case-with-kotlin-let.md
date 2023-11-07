@@ -3,10 +3,8 @@ layout: default
 title: "A case with Kotlin let"
 categories: [post]
 tags: [kotlin]
+date: 2019-03-19 14:05 +0530
 ---
-
-# A case with Kotlin let
-*- {{ page.date | date: "%b %-d, %Y" }}*
 
 <p class="graf graf--p">One of my test cases were failing. It was to verify that a particular function is getting called when data is empty. Instead it was getting called twice which was unexpected.</p>
 <p class="graf graf--p">The code I was testing had a <code class="markup--code markup--p-code">let</code> block and Elvis operator. If a value is non null then let block is executed. Else the expression to the right of Elvis operator gets executed.</p>

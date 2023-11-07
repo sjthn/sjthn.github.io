@@ -1,0 +1,33 @@
+.body {
+  margin: 0px;
+}
+
+.blogposts_listing {
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+.post_list_item {
+  padding-bottom: 16px;
+}
+
+.section {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  max-width: 1000px;
+  line-height: 1.5;
+}
+
+/* pre {
+  font-size: 12pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  border: solid 1px #d0d0d0;
+  max-width: 100%;
+  overflow: auto;
+} */

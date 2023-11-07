@@ -3,3 +3,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .DS_Store
+
+node_modules/
+
+.next/
+
+*.d.ts
