@@ -13,7 +13,6 @@ const BlogPost: FC<BlogPostProps> = ({ params }) => {
     encoding: "utf-8",
   });
   const { data: frontmatter, content } = matter(markdown);
-  console.log(frontmatter["title"]);
   return (
     <div>
       <BlogHeading title={frontmatter["title"]} date={frontmatter["date"]} />
@@ -21,5 +20,16 @@ const BlogPost: FC<BlogPostProps> = ({ params }) => {
     </div>
   );
 };
+
+export function generateStaticParams() {
+  const posts = fs.readdirSync(`_posts/`);
+  const postPaths = posts.map((post) => {
+    const postName = post.replace(".md", "");
+    return {
+      blogpost: postName,
+    };
+  });
+  return postPaths;
+}
 
 export default BlogPost;
