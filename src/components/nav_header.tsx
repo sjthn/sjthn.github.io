@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 export default function NavHeader() {
   return (
     <div className={styles.header}>
-      <h1>srijith</h1>
+      <h2>srijith</h2>
       <nav className={styles.nav}>
         <ol
           style={{
@@ -19,10 +19,20 @@ export default function NavHeader() {
               Home
             </Link>
           </li>
-          <li>
+          <li style={{ paddingRight: "16px" }}>
             <Link style={{ color: "white" }} href="/blog">
               Blog
             </Link>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "white" }}
+              href="https://twitter.com/srijith_un"
+            >
+              Twitter
+            </a>
           </li>
         </ol>
       </nav>
