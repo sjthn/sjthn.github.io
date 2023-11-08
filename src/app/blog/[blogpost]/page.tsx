@@ -3,6 +3,7 @@ import fs from "fs";
 import { marked } from "marked";
 import matter from "gray-matter";
 import { BlogHeading } from "../../../components/blog_heading";
+import generateRssFeed from "../../utilities/rss";
 
 interface BlogPostProps {
   params: { blogpost: string };
@@ -21,14 +22,17 @@ const BlogPost: FC<BlogPostProps> = ({ params }) => {
   );
 };
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const posts = fs.readdirSync(`_posts/`);
   const postPaths = posts.map((post) => {
-    const postName = post.replace(".md", "");
+    const postPath = post.replace(".md", "");
     return {
-      blogpost: postName,
+      blogpost: postPath,
     };
   });
+
+  await generateRssFeed(postPaths);
+
   return postPaths;
 }
 

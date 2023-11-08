@@ -10,3 +10,5 @@ node_modules/
 out/
 
 *.d.ts
+
+public/rss.xml
