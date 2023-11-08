@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import styles from "../styles.module.css";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
+
 export default function Blog() {
   return (
     <div>
@@ -24,7 +30,9 @@ export default function Blog() {
 
         <div>
           <li className={styles.post_list_item}>
-            <Link href="/blog/2019-03-19-a-case-with-kotlin-let">A case with Kotlin let</Link>
+            <Link href="/blog/2019-03-19-a-case-with-kotlin-let">
+              A case with Kotlin let
+            </Link>
             <div>Published on: Mar 19, 2019</div>
           </li>
         </div>

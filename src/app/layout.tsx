@@ -2,10 +2,17 @@ import { Source_Code_Pro } from "next/font/google";
 import Script from "next/script";
 import App from "./_app";
 import styles from "./styles.module.css";
+import { Metadata } from "next";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  title: "Srijith",
+  description:
+    "Welcome to my blog where I write about my experiences in software development",
+};
 
 export default function RootLayout({
   children,

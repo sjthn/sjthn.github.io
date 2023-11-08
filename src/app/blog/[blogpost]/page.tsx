@@ -32,4 +32,14 @@ export function generateStaticParams() {
   return postPaths;
 }
 
+export async function generateMetadata({ params }) {
+  let markdown = fs.readFileSync(`_posts/${params.blogpost}.md`, {
+    encoding: "utf-8",
+  });
+  const { data: frontmatter } = matter(markdown);
+  return {
+    title: frontmatter["title"],
+  };
+}
+
 export default BlogPost;
