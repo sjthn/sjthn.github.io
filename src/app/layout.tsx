@@ -2,7 +2,7 @@ import { Source_Code_Pro } from "next/font/google";
 import Script from "next/script";
 import App from "./_app";
 import styles from "./styles.module.css";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import "./global.css";
 
 const sourceCodePro = Source_Code_Pro({
@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "Srijith",
   description:
     "Welcome to my blog where I write about my experiences in software development",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
 };
 
 export default function RootLayout({

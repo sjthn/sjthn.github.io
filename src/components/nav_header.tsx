@@ -3,7 +3,8 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 export default function NavHeader() {
   return (
-    <>
+    <div className={styles.header}>
+      <h1>srijith</h1>
       <nav className={styles.nav}>
         <ol
           style={{
@@ -25,6 +26,6 @@ export default function NavHeader() {
           </li>
         </ol>
       </nav>
-    </>
+    </div>
   );
 }
