@@ -3,6 +3,7 @@ import Script from "next/script";
 import App from "./_app";
 import styles from "./styles.module.css";
 import { Metadata } from "next";
+import "./global.css";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
