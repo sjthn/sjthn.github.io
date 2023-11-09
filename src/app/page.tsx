@@ -8,7 +8,10 @@ export default function Home() {
           interesting stuffs about them.
         </p>
 
-        <p>This is the medium I use to share my thoughts.</p>
+        <p>
+          This is the medium I use to share my thoughts. Connect with me on
+          Twitter for any discussions related to software.
+        </p>
       </section>
     </div>
   );

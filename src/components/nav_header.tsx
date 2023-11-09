@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 export default function NavHeader() {
   return (
     <div className={styles.header}>
-      <h2>srijith</h2>
+      <h2 style={{ fontStyle: "italic" }}>srijith</h2>
       <nav className={styles.nav}>
         <ol
           style={{
