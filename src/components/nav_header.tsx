@@ -9,8 +9,9 @@ export default function NavHeader() {
         <ol
           style={{
             listStyle: "none",
-            fontSize: "20px",
+            fontSize: "16px",
             display: "flex",
+            alignItems: "center",
             paddingLeft: 0,
           }}
         >
